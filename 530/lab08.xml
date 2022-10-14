@@ -1,0 +1,47 @@
+<response type="result">
+    <data>
+    <item>
+        <title>stream</title>
+        <song>Rodz - What Am I Gonna Do [2001]</song>
+        <track>
+            <artist>Rodz</artist>
+            <title>What Am I Gonna Do [2001]</title>
+            <album/>
+            <royaltytrackid>0</royaltytrackid>
+            <started/>
+            <id>43529</id>
+            <length>0</length>
+            <playlist>
+            <id>2706</id>
+            <title>Aloha 'auinala (The Afternoon Show)</title>
+            </playlist>
+            <buyurl/>
+            <imageurl>https://s20.postimg.cc/kng9rrye5/hs1.jpg</imageurl>
+        </track>
+        <bitrate>64 Kbps</bitrate>
+        <server>Online</server>
+        <autodj>Online</autodj>
+        <source>Yes</source>
+        <offline/>
+        <summary><a href = "http://199.195.194.92:2199/tunein/-stream/meyima03.pls">stream - Rodz - What Am I Gonna Do [2001]</a></summary>
+        <listeners>2</listeners>
+        <maxlisteners>100</maxlisteners>
+        <reseller>0</reseller>
+        <serverstate>1</serverstate>
+        <sourcestate>1</sourcestate>
+        <sourceconn>1</sourceconn>
+        <date>Nov 20, 2020</date>
+        <time>12:04 PM</time>
+        <rawmeta>Rodz - What Am I Gonna Do [2001]</rawmeta>
+        <mountpoint>/stream</mountpoint>
+        <tuneinurl>http://199.195.194.94:8183/stream</tuneinurl>
+        <directtuneinurl/>
+        <proxytuneinurl/>
+        <tuneinformat>aac</tuneinformat>
+        <webplayer>muses</webplayer>
+        <servertype>IceCast</servertype>
+        <listenertotal>2</listenertotal>
+        <url>http://199.195.194.92:2199/rpc</url>
+        </item>
+    </data>
+</response>

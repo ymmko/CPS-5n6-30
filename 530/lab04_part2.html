@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Lab 04: Part II</title>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
+        <link rel = "stylesheet" href = "./lab04.css">
+        <link rel = "stylesheet" href = "./lab03.css">
+    </head>
+    <body class = "bodystyle2" style = "text-align: left; padding-left:15px">
+        <form action = "./cgi-bin/lab04_part2.pl" method = "post">
+            <h1>What is your name?</h1>
+                <input type = "text" name = "username">
+            <h1>Which of the animals below do you like as a pet?</h1>
+                <input type = "checkbox" name = "animal" value = "dog">a dog<br>
+                <input type = "checkbox" name = "animal" value = "cat">a cat<br>
+                <input type = "checkbox" name = "animal" value = "bird">a bird<br>
+                <input type = "checkbox" name = "animal" value = "hamster">a hamster<br>
+                <input type = "checkbox" name = "animal" value = "mouse">a mouse<br>
+                <input type = "checkbox" name = "animal" value = "rabbit">a rabbit<br>
+            <h1>Please select the colour your pet!</h1>
+            <select name = "colour"/>
+                <option value = "brown">brown</option>
+                <option value = "golden">golden</option>
+                <option value = "white">white</option>
+                <option value = "black">black</option>
+            </select>
+            <h1>Now choose its name!</h1>
+            <input type = "text" name = "petname">
+            <br>
+            <br>
+            <input type = "submit" value = "Submit" class = "buttonstyle2">        
+        </form>
+    </body>
+</html>

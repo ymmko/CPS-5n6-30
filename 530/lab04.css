@@ -1,0 +1,32 @@
+.font
+{
+    text-align: center;
+    font-size: 150px;
+    font-family: 'Tangerine', serif;
+    color: cornsilk;
+    background-color: darkslategrey;
+    font-style: cursive;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.buttonstyle2 
+{
+    background-color: cornsilk;
+    color: darkslategrey;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+.imgborder
+{
+    border: 10px solid black;
+}
+#container
+{
+    position: absolute;
+    cursor: move;
+    justify-content: center;
+    touch-action: none;
+}

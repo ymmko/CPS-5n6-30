@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Lab 06 | Part II</title>	
+		<meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
+        <link rel = "stylesheet" href = "./lab04.css">
+        <link rel = "stylesheet" href = "./lab03.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body class = "bodystyle2" style = "text-align: center; padding-left: 0px;">
+        <h1>Please enter the following information</h1>
+        <br><br><br><br>
+        <form name = "form" onsubmit = "return formValidation()" method = "get">
+            <h2 class="noSpacing">Full name:</h2>
+            <input type = "text" name = "name" value = "" id = "name" placeholder = "John Smith">
+            <br><br>
+            <h2 class = "noSpacing">Phone Number:</h2>
+            <input type = "text" name = "phone" value = "" id = "phone" placeholder = "(012)-345-6789">
+            <br><br>
+            <h2 class = "noSpacing">Address:</h2>
+            <input type = "text" name = "adrs" value = "" id = "adrs" placeholder = "10 Street Rd.">
+            <br><br><br><br>
+            <button class = "buttonstyle2" type = "submit" name = "submitRB" formaction = "./cgi-bin/lab06.rb">Submit [Ruby]</button>
+            <button class = "buttonstyle2" type = "submit" name = "submitPY" formaction = "./cgi-bin/lab06_py.cgi">Submit [Python]</button>
+        </form>
+        <script type="text/javascript">
+            function formValidation()
+            {
+                var name = document.forms["form"]["name"].value;
+                var phoneNum = document.forms["form"]["phone"].value;
+                var nameForm = /^[A-Za-z ]+$/;
+                var numForm = /^[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}$/;
+                
+                if(name == "" || phoneNum == "")
+                {
+                    alert("Please enter your name and phone number");
+                    return false;
+                }
+                else if (!name.match(nameForm))
+                {
+                    alert("Please re-enter your full name");
+                    return false;
+                }
+                else if (!phoneNum.match(numForm))
+                {
+                    alert("Please re-enter your phone number");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

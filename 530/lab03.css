@@ -1,0 +1,66 @@
+.bodystyle
+{
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 11px;
+    color: darkslategrey;
+    background-color: cornsilk;
+    text-align: center;
+}
+.bodystyle2
+{
+    font-family: verdana, arial, helvetica, sans-serif;
+    color: cornsilk;
+    background-color: darkslategrey;
+}
+.spanstyle
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: darkslategrey;
+}
+.buttonstyle
+{
+    background-color: cornsilk;
+    color: darkslategrey;
+    box-shadow: darkslategrey;
+}
+.btn-dark:hover
+{
+    background-color: lightslategrey;
+}
+.btn-dark
+{
+    background-color: darkslategrey;
+    color: cornsilk;
+    font-weight: bold;
+}
+.containerstyle
+{
+    background-color: cornsilk;
+    color: darkslategrey;
+    text-align: left;
+    font-weight: bold;
+}
+.container-fluid
+{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+p, ol, ul, li
+{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+h4
+{
+    font-size: 30px;
+    margin-left: 15px;
+    padding-left: 5px;
+}
+a
+{
+    color: goldenrod;
+    text-decoration: underline;
+}

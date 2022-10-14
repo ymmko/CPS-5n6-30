@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <title>Login Page</title>
+    <style>
+        body 
+        {
+            background-color: darkslategrey;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        h1 
+        {
+            color: cornsilk;
+            font-size: 30px;
+            margin-top: 350px;
+        }
+        form 
+        {
+            color: cornsilk;
+        }
+        input
+        {
+            border: none;
+            background-color: cornsilk;
+            color: darkslategrey;
+            padding: 8px 20px;
+            font-weight: bold;
+            font-size: 15px
+        }
+    </style>
+    <h1>Please enter the password to view the labs</h1>
+    <body>
+        <form>
+            <input type = "password" id = "pwd">
+            <input type = "button" value = "Submit" onClick = "checkPassword()" />            
+        </form>
+        <script>
+            function checkPassword()
+            {
+                var realPassword = "notsecure" ;
+                var password = document.getElementById("pwd").value;
+                if (password == realPassword)
+                {
+                    window.location.replace("main_page.html");
+                }
+                else if (password == "")
+                {
+                    alert("Please enter a password!")
+                }
+                else
+                {
+                    alert("Wrong password!");
+                }
+            }
+        </script>
+    </body>
+</html>

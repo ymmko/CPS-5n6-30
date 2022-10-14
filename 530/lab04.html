@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <title>Lab 04</title>	
+		<meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
+        <link rel = "stylesheet" href = "./lab04.css">
+        <link rel = "stylesheet" href = "./lab03.css">
+    </head>
+    <body class = "bodystyle2" style = "text-align:center">
+        <h1>Lab Objectives: </h1>
+        <p>
+            PART I: Create a simple Perl program.<br>
+            PART II: Create a simple dynamic web page with Perl based on information sumbitted by the visitor through a form.<br>
+            Do part I first and make sure it works before doing part II
+        </p>
+        <input type = "button" class = "buttonstyle2" value = "Part I" onclick = "reDirect1()" />
+        <input type = "button" class = "buttonstyle2" value = "Part II" onclick = "reDirect2()" />
+        <script>
+            function reDirect1()
+            {
+                window.open("http://www2.scs.ryerson.ca/~mmkoc/cgi-bin/lab04_part1.pl");
+            }
+            function reDirect2()
+            {
+                window.open("lab04_part2.html");
+            }
+        </script>
+    </body>
+</html>

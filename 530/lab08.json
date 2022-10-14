@@ -1,0 +1,46 @@
+{
+    "response": {
+      "-type": "result",
+      "data": {
+        "item": {
+          "title": "stream",
+          "song": "Rodz - What Am I Gonna Do [2001]",
+          "track": {
+            "artist": "Rodz",
+            "title": "What Am I Gonna Do [2001]",
+            "album": "",
+            "royaltytrackid": "0",
+            "started": "1574177835",
+            "id": "43529",
+            "length": "0",
+            "playlist": {
+            "id": "2706",
+            "title": "Aloha kakahiaka (The Morning Show)"
+            },
+            "imageurl": "https://s20.postimg.cc/kng9rrye5/hs1.jpg"
+          },
+          "bitrate": "64 Kbps",
+          "server": "Online",
+          "autodj": "Online",
+          "source": "Yes",
+          "summary": "<a href=\"http://199.195.194.92:2199/tunein/-stream/meyima03.pls\">stream - Sonny Chillingworth - Mai Poina 'Oe Ia'u [1999]</a>",
+          "listeners": "2",
+          "maxlisteners": "100",
+          "reseller": "0",
+          "serverstate": "1",
+          "sourcestate": "1",
+          "sourceconn": "1",
+          "date": "Nov 20, 2020",
+          "time": "12:04 PM",
+          "rawmeta": "Rodz - What Am I Gonna Do [2001]",
+          "mountpoint": "/stream",
+          "tuneinurl": "http://199.195.194.94:8183/stream",
+          "tuneinformat": "aac",
+          "webplayer": "muses",
+          "servertype": "IceCast",
+          "listenertotal": "2",
+          "url": "http://199.195.194.92:2199/rpc"
+        }
+      }
+    }
+  }

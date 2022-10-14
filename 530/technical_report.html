@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h>Code for login.html</h>
+        <div>
+            <textarea disabled>
+                <!DOCTYPE html>
+                <html>
+                    <title>Login Page</title>
+                    <h1>Please enter the password to view the labs</h1>
+                    <body>
+                        <label for = "pwd">Password:</label>
+                        <input type = "password" id = "pwd">
+                        <input type = "button" value = "Submit" onclick = "checkPassword()" />
+                        <script>
+                            function checkPassword()
+                            {
+                                var realPassword = "notsecure" ;
+                                var password = document.getElementById("pwd").value ;
+                                if (password == realPassword)
+                                {
+                                    window.location.replace("main_page.html") ;
+                                }
+                                else
+                                {
+                                    alert("Wrong password!") ;
+                                }
+                            }
+                        </script>
+                    </body>
+                </html> 
+            </textarea>
+        </div>
+        <h>Code for main_page.html (will probably change when I add more labs)</h>
+        <div>
+            <textarea disabled>
+                <!DOCTYPE html>
+                    <html>
+                        <title>MAIN PAGE</title>
+                        <h1>CPS530 LABS</h1>
+                        <input type = "button" value = "Lab 01" onclick = "reDirect1()" />
+                        <script>
+                            function reDirect1()
+                            {
+                                window.location.replace("lab01.html") ;
+                            }
+                        </script>
+                    </html>
+            </textarea>
+        </div>
+        <h>Code for lab01.html</h>
+        <div>
+            <textarea disabled>
+                <!DOCTYPE html>
+                <html>
+                    <title>Lab 01</title>
+                    <h1>Lab 01</h1>
+                    <body>
+                        <h2>This webpage will display the requirements for this lab.</h2>
+                        <h3>Text in highlighted are my own.</h3>
+                        <ol>
+                            <li>The page subject is entirely yours: <mark>The subject I chose is "Lab 01 Requirements."</mark></li>
+                            <li>Your name and student number must appear clearly on the main page: <mark>Muhammet Koc</mark></li>
+                            <li>You must not use CSS outside an actual tag (style attribute ok, no external CSS file). <mark>Ok.</mark></li>
+                            <li>You must use a header tag like &lt;h1&gt; at least once. <mark>Done.</mark></li>
+                            <li>You must use a list (unordered, ordered or definition) at least once. <mark>:thumbs_up:</mark></li>
+                            <li>You must use a tag you have never used before (if you are new to HTML, you may pick any one; if you have used them all, then say so in your technical report. <mark>I've never used the &lt;mark&gt; tag before, now I am.</mark></li>
+                            <li>You must validate your web page for HTML5 compliancy at validator.nu or validator.w3.org and save the report into a file (direct linking likely not possible if you have password protection).
+                                <ul>
+                                    <li><a href = "url">https://validator.nu/?doc=https%3A%2F%2Fwww.cs.ryerson.ca%2F%7Emmkoc%2Flab01.html</a></li>
+                                    <li><a href = "url">https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.cs.ryerson.ca%2F~mmkoc%2Flab01.html</a></li>
+                                    <li><mark>Quick note: clicking on the link doesn't work unless you copy and paste it into your own web browser. The lab description says it might not work and doesn't tell us to fix it now.</mark></li>
+                                </ul>
+                            </li>
+                            <li>Your web page must have a link to your validation report and technical report. <mark>Link above.</mark></li>
+                            <li>You must host your pages on a server of your choice: main page, technical report, and validation report.</li>
+                            <li>The access to your page must be password protected. You use a method of your choosing to do it (use a search engine to find one). Don't worry if it is not very secure. We'll look at more secure options later in the course.<mark>I hope so.</mark></li>
+                            <li>Write a technical report in HTML that contains all the following elements
+                                <ul>
+                                    <li>The actual HTML code (the code itself presented on a page or text file).</li>
+                                    <li>How did you password protect your page (what method)?</li>
+                                    <li>What new tag did you try? What was its effect?</li>
+                                    <li>Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?</li>
+                                    <li>How long did you spend on this lab (approximately)</li>
+                                    <li><a href = "technical_report.html">TECHNICAL REPORT</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </body>
+                </html>
+            </textarea>
+        </div>
+        <pre>
+            How did you password protect your page?
+            <mark>I created a function that would check if the password entered would match the password I set in the code.</mark>
+                
+            What new tag did I try?
+            <mark>I tried the &gt;mark&lt; for the first time to highlight my text.</mark>
+                
+            Does your page look different in different browsers and platforms(IE/Edge/Firefox/Chrome/Safari - desktop/tablet/phone)? If yes, what are the main differences?
+            <mark>No, it looks very similar because the page is very bare bones. The main differences would be the window dimensions that are different on every device or if you have the window minimized/custom sized.</mark>
+                
+            How long did you spend on this lab (approximately)?
+            <mark>If I were to count all the spread out time on this, probably 3 hours because this is legitamately my first whole webpage using purely HTML (though I've played with some HTML before on other websites).</mark>
+        </pre>
+    </body>
+</html>
