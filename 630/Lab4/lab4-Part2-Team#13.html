@@ -1,0 +1,26 @@
+<!-- 
+    Lab 4 Part 2
+    Group: 13
+
+-->
+<html>
+    <head>
+        <title>CPS630 - Lab 4 Part 2</title>
+            <link rel="stylesheet" type="text/css" href="lab4style.css">
+            <script src="./lab4.js"></script>
+    </head>
+    <body>
+        <h1>Displaying Locations on a Map</h1>
+        <div>Click to show or hide:
+            <input id="slc" type="button" value="SLC"/>
+            <input id="popeyes" type="button" value="Popeyes"/>
+            <input id="subway" type="button" value="Subway"/>
+            <p id="notification">Clicking on markers will show hours of operation</p>
+        </div>
+        <div id="map"></div>
+        <!-- Connected to our own Google Map API -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyXcO3uLAA70yWIFVfSJonZ-BrLYmZn1k&callback=initMap"
+                async 
+        ></script>
+    </body>
+</html>

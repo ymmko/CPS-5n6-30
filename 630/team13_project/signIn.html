@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <title>Log In</title>
+      <link rel = "stylesheet" href = "./styles/checkout.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+      <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel = "stylesheet">
+      <link href = "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel = "stylesheet">
+      <link rel = "stylesheet" href = "./styles/style.css">
+    </head>
+    <body>
+      
+      <!-- Navigation bar -->
+        <header class = "logobar" style = "background-color: black; color: white; text-align: center;">
+            <img height = "25px"> eGadget
+        </header>
+        <header class = "navbar">
+        <nav>
+            <a href = "index.html">HOME</a>
+            <a href = "store.html">SHOP</a>
+            <a href = "about.html">ABOUT US</a>
+            <a href = "contact.html">CONTACT US</a>
+            <a href = "services.html">SERVICES</a>
+            <a class = "cart" href = "cart.html" style = "float: right;">CART<span class = "badge">0</span></a>
+            <a class = "active" href = "signIn.html" style = "float: right;">SIGN IN</a>
+            <a href = "signUp.html" style = "float: right;">SIGN UP</a>
+
+        </nav>
+        </header>
+		    <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <!-- Account Application Form -->                            
+              <form name="login" action="#" onsubmit ="return validateForm()">
+              <h3>Log In</h3>
+              <div class="row">
+                <div class="col-50">
+                  <label for="id">Username</label>
+                  <input type="text" id="id" name="username">   
+                  <label for="pwd">Password</label>
+                  <input type="text" id="pwd" name="password">
+
+                </div>
+              </div>
+              <input type="submit" value="Log In" class="continue" onclick="reDirectToConfirmation()"/>
+              </form>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

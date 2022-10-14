@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+
+<body>
+  <script type="text/ng-template" id="test-spa.html">
+    <h1>Home</h1>
+    <h2>{{message}}</h2>
+  </script>
+  <script type="text/ng-template" id="aboutus.html">
+    <h1>About Us</h1>
+    <h2>{{message}}</h2>
+  </script>
+  <script type="text/ng-template" id="reviews.html">
+    <h1>Reviews</h1>
+    <h2>{{message}}</h2>
+  </script>
+  
+  <a href="#/">Home</a>
+  <a href="#/aboutus">About Us</a>
+  <a href="#/reviews">Reviews</a>
+  
+  <div ng-view></div>
+  <script>
+    var app = angular.module('myApp', ['ngRoute']);
+    
+    app.controller('HomeController', function($scope) {
+      $scope.message = 'Hello from HomeController';
+    });
+    
+    app.controller('AboutusController', function($scope) {
+      $scope.message = 'Hello from AboutusController';
+    });
+    
+    app.controller('ReviewsController', function($scope) {
+      $scope.message = 'Hello from ReviewsController';
+    });
+    
+    app.config(function($routeProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: 'test-spa.html',
+          controller: 'HomeController'
+        })
+        .when('/aboutus', {
+          templateUrl: 'aboutus.html',
+          controller: 'AboutusController'
+        })
+        .when('/reviews', {
+          templateUrl: 'reviews.html',
+          controller: 'ReviewsController'
+        })
+        .otherwise({ redirectTo: '/' });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!--
+Group: 13
+Rajpreet Singh Dhaliwal (500806532)
+Raymond Xu (500696650)
+Muhammet Koc (500848690) 
+-->
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+
+<body>
+  <script type="text/ng-template" id="index.html">
+    <h1>Home</h1>
+    <h2>{{message}}</h2>
+  </script>
+  <script type="text/ng-template" id="aboutus.html">
+    <h1>About Us</h1>
+    <h2>{{message}}</h2>
+  </script>
+  <script type="text/ng-template" id="reviews.html">
+    <h1>Reviews</h1>
+    <h2>{{message}}</h2>
+  </script>
+  
+  <a href="#/">Home</a>
+  <a href="#/aboutus">About Us</a>
+  <a href="#/reviews">Reviews</a>
+  
+  <div ng-view></div>
+  <script src="app.js"></script>
+</body>
+
+</html>

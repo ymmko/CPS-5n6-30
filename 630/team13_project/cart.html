@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <head>
+            <meta charset = "UTF-8">
+            <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+            <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel = "stylesheet">
+            <link href = "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel = "stylesheet">
+            <link rel = "stylesheet" href = "./styles/style.css">
+            <link rel="stylesheet" href="styles/checkout.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <title>Shopping Cart</title>
+        </head>
+    </head>
+    <body>
+
+        <!-- Navigation bar -->
+        <header class = "logobar" style = "background-color: black; color: white; text-align: center;">
+            <img height = "25px"> eGadget
+        </header>
+        <header class = "navbar">
+            <nav>
+                <a href = "index.html">HOME</a>
+                <a href = "store.html">SHOP</a>
+                <a href = "about.html">ABOUT</a>
+                <a class = "cart" href = "cart.html" style = "float: right;">CART<span class = "badge">0</span></a>
+                <a class = "cart" href = "signUp.html" style = "float: right;"><span>SIGN UP</span></a>
+            </nav>
+        </header>
+
+        <!-- Shopping cart table to show total/subtotal -->
+        <div class = "container-products">
+            <div class = "product-header">
+                <h5 class = "product-title">PRODUCT</h5>
+                <h5 class = "price sm-hide">PRICE</h5>
+                <h5 class = "quantity">QUANTITY</h5>
+                <h5 class = "total">TOTAL</h5>
+            </div>
+            <div class = "products">
+            </div>
+        </div>
+        <div class = "bttn">
+            <input class = "button btn-danger" type = "button" value = "CHECKOUT" onclick = "reDirectToCheckout()" />
+        </div>
+
+        <footer class = "w3-center" id = "footer2">
+            <div class="w3-row-padding">
+              <div class="w3-col s12">
+                <p><a href="about.html" style="color:white;" >About</a><p>
+                <p><a href="dlapps.html" style="color:white;">Download</a><p>
+              </div>
+              <div>
+                <a class="w3-col s4" href="conditionsOfUse.html" style="text-decoration:none; color:white;" > Conditons of Use </a>
+                <a href="privacyPolicy.html" class="w3-col s4"  style="text-decoration:none; color:white;"> Privacy Notice </a>
+                <a href=""  class="w3-col s4" style="text-decoration:none; color:white;" id = "copyright"> @copyright </a>
+              </div>
+            </div>
+          </footer>
+        
+        <script src = "./js/cart.js"></script>
+        <script src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>

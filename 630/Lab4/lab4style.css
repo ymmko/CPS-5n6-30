@@ -1,0 +1,37 @@
+/* 
+Lab 4 Part 2
+Group: 13
+Rajpreet Singh Dhaliwal (500806532)
+Raymond Xu (500696650)
+Muhammet Koc (500848690) 
+*/
+header {
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(54, 51, 51);
+    color:white;
+}
+
+#notification{
+    font-style: italic;
+}
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+    height: 760px;
+    width: 760px;
+    color:black;
+}
+
+a {
+	color:white;
+}

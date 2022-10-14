@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+   <head>
+      <title>AngularJS MVC Architecture</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="../Lab4/lab4style.css">
+   </head>
+   <body>
+      <div ng-App="myApp" ng-controller="fullName">
+        <p ng-repeat="Name in Student">{{ Name.FName }}</p>
+      </div>
+
+      <script>
+        var myapp = angular.module('myApp',[]);
+
+        myapp.controller('fullName', function($scope) {
+          $scope.Student = [{
+            FName: "John",
+            LName: "Smith"
+          }];
+        });
+      </script>
+   </body>
+</html>
+
+
+<!--
+   ----------------------------------
+   Output:
+   
+       John
+   -->

@@ -1,0 +1,149 @@
+<html>
+    <head>
+      <title>CHECKOUT</title>
+      <link rel = "stylesheet" href = "./styles/checkout.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+      <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel = "stylesheet">
+      <link href = "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel = "stylesheet">
+      <link rel = "stylesheet" href = "./styles/style.css">
+      <script>
+        function validateForm() {
+        var fname = document.forms["Payment"]["firstname"].value;
+        var email = document.forms["Payment"]["email"].value;
+        var address = document.forms["Payment"]["address"].value;
+        var city = document.forms["Payment"]["city"].value;
+        var cardName = document.forms["Payment"]["cardname"].value;
+        var number = document.forms["Payment"]["cardnumber"].value;
+        var month = document.forms["Payment"]["expmonth"].value;
+        var year = document.forms["Payment"]["expyear"].value;
+        var cvv = document.forms["Payment"]["cvv"].value;
+        if (fname == "") {
+        alert("Name must be filled out");
+        return false;
+        }else if (email == ""){
+        alert("email must be filled out");
+        return false;
+        }else if (address == ""){
+        alert("address must be filled out");
+        return false;
+        }else if (city == ""){
+        alert("city must be filled out");
+        return false;
+        }else if (cardName == ""){
+        alert("cardName must be filled out");
+        return false;
+        }else if (number == ""){
+        alert("number must be filled out");
+        return false;
+        }else if (month == ""){
+        alert("month must be filled out");
+        return false;
+        }else if (year == ""){
+        alert("year must be filled out");
+        return false;
+        }else if (cvv == ""){
+        alert("cvv must be filled out");
+        return false;
+        }
+      }
+      function reDirectToConfirmation()
+      {
+          window.open("deliveryProcessed.html");
+      }
+      </script>
+    </head>
+    <body>
+      
+      <!-- Navigation bar -->
+      <header class = "logobar" style = "background-color: black; color: white; text-align: center;">
+          <img height = "25px"> eGadget
+      </header>
+      <header class = "navbar">
+          <nav>
+              <a href = "index.html">HOME</a>
+              <a href = "store.html">SHOP</a>
+              <a href = "about.html">ABOUT</a>
+              <a class = "cart" href = "login.html" style = "float: right;">CART<span class = "badge">0</span></a>
+              <a class = "cart" href = "signup.html" style = "float: right;"><span>SIGN UP</span></a>
+          </nav>
+      </header>
+		    <div class="row">
+          <div class="col-75">
+            <div class="container">
+
+              <!-- Checkout form -->
+              <form name="Payment" action="#" onsubmit ="return validateForm()">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Address</h3>
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John Doe">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.ca">
+                  <label for="adr">Address</label>
+                  <input type="text" id="adr" name="address" placeholder="">
+                  <label for="city"> City</label>
+                  <input type="text" id="city" name="city" placeholder="Toronto">
+                </div>
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Johnothan Doe">
+                  <label for="ccnum">Credit Card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="####-####-####-####">
+                  <h4>Expiry Date</h4>
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expmonth">Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    </div>
+                    <div class="col-50">
+                        <label for="expyear">Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2020">
+                    </div>
+                    <div class="col-25">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="###">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input type="submit" value="Continue to checkout" class="continue" onclick="reDirectToConfirmation()"/>
+              </form>
+            </div>
+          </div>
+
+          <!--Cart preview
+          <div class="col-25">
+            <div class="container">
+              <h4><a href="cart.html">Cart</a></h4>
+              <p><a href="#">Item 1</a></p>
+              <p><a href="#">Item 2</a></p>
+              <p><a href="#">Item 3</a></p>
+              <p><a href="#">Item 4</a></p>
+              <hr>
+              <p> Total</p>
+            </div>
+          </div>
+          -->
+        </div>
+
+    <!-- Footer -->
+    <footer class = "w3-center" id = "footer2">
+      <div class="w3-row-padding">
+        <div class="w3-col s12">
+          <p><a href="about.html" style="color:white;" >About</a><p>
+          <p><a href="dlapps.html" style="color:white;">Download</a><p>
+        </div>
+        <div>
+          <a class="w3-col s4" href="conditionsOfUse.html" style="text-decoration:none; color:white;" > Conditons of Use </a>
+          <a href="privacyPolicy.html" class="w3-col s4"  style="text-decoration:none; color:white;"> Privacy Notice </a>
+          <a href=""  class="w3-col s4" style="text-decoration:none; color:white;" id = "copyright"> @copyright </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
