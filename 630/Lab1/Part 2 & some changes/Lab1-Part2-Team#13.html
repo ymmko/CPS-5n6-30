@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+    Group 13 Members:
+
+-->
+<html>
+    <head>
+        <title>Electronics-Center</title>
+        <link rel="stylesheet" type="text/css" href="lab1-Part1-Team%2313.css">
+    </head>
+    <body>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(document).ready(function(){                
+                // handles fading of images
+                $("#btn_laptop_on").click(function(){
+                    $("#laptop_img").fadeIn();
+                    $("#btn_laptop_off").prop('checked',false);
+                })
+                $("#btn_laptop_off").click(function(){
+                    $("#laptop_img").fadeOut();
+                    $("#btn_laptop_on").prop('checked',false);
+                })
+                $("#btn_tablet_on").click(function(){
+                    $("#tablet_img").fadeIn();
+                    $("#btn_tablet_off").prop('checked',false);
+                })
+                $("#btn_tablet_off").click(function(){
+                    $("#tablet_img").fadeOut();
+                    $("#btn_tablet_on").prop('checked',false);
+                })
+                $("#btn_phone_on").click(function(){
+                    $("#phone_img").fadeIn();
+                    $("#btn_phone_off").prop('checked',false);
+                })
+                $("#btn_phone_off").click(function(){
+                    $("#phone_img").fadeOut();
+                    $("#btn_phone_on").prop('checked',false);
+                })
+
+                // handles fading of product information
+                $("#btn_laptop_info_on").click(function(){
+                    $(".laptop_info").fadeIn();
+                    $("#btn_laptop_info_off").prop('checked',false);
+                })
+                $("#btn_laptop_info_off").click(function(){
+                    $(".laptop_info").fadeOut();
+                    $("#btn_laptop_info_on").prop('checked',false);
+                })
+                $("#btn_tablet_info_on").click(function(){
+                    $(".tablet_info").fadeIn();
+                    $("#btn_tablet_info_off").prop('checked',false);
+                })
+                $("#btn_tablet_info_off").click(function(){
+                    $(".tablet_info").fadeOut();
+                    $("#btn_tablet_info_on").prop('checked',false);
+                })
+                $("#btn_phone_info_on").click(function(){
+                    $(".phone_info").fadeIn();
+                    $("#btn_phone_info_off").prop('checked',false);
+                })
+                $("#btn_phone_info_off").click(function(){
+                    $(".phone_info").fadeOut();
+                    $("#btn_phone_info_on").prop('checked',false);
+                })
+
+                // animates enlarging of images
+                $("#bigger_images").click(function(){
+                    $("img").animate({height: "250px"});
+                    $("img").animate({width: "250px"});
+                })
+                // animates shrinking of images
+                $("#smaller_images").click(function(){
+                    $("img").animate({width: "100px"});
+                    $("img").animate({height: "100px"});                    
+                })
+            })
+        </script>
+
+        <header>Welcome to the Electronics-Center!</header>
+        <form>
+            <input type="text" id="text"name="textbox" placeholder="Enter Text Here">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- Dropdown List for ACTION -->
+        <form style="float:left;">
+            <label>Action:</label>
+            <select name="action" id="action">
+                <option value=0>Archive</option>
+                <option value=1>Edit</option>
+                <option value=2>Delete</option>
+                <option value=3>Collection</option>
+            </select>
+            <br><br>
+        </form>
+        
+        <!-- Dropdown List for TYPE -->
+        <form style="float:right;">
+            <label>Type:</label>
+            <select name="type" id="type">
+                <option value=0>LapTop</option>
+                <option value=1>NoteBook</option>
+                <option value=2>Table</option>
+                <option value=3>CellPhone</option>
+            </select>
+            <br><br>
+        </form>
+        
+        <br><br>
+        
+        <!-- Table of images -->
+        <table>
+            <tr>
+                <th>Image On/Off</th>
+                <th>Info On/Off</th>
+                <th></th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Year</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>
+                    <label>On</label>
+                    <input type="radio" id="btn_laptop_on" value="laptopON">
+                    <label>Off</label>
+                    <input type="radio" id="btn_laptop_off" value="laptopOFF">
+                </td>
+                <td>
+                    <label>On</label>
+                    <input type="radio" id="btn_laptop_info_on" value="laptopInfoON">
+                    <label>Off</label>
+                    <input type="radio" id="btn_laptop_info_off" value="laptopInfoOFF">
+                </td>
+                <td>
+                    <img id="laptop_img" width="100" height="100" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_CA?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1632948913000" alt="laptop">
+                </td>
+                <td class="laptop_info">MacBook Pro</td>
+                <td class="laptop_info">Apple</td>
+                <td class="laptop_info">2021</td>
+                <td class="laptop_info">Laptop</td>
+                <td class="laptop_info">
+                    <button class="dummy">Archive</button>
+                    <button class="dummy">Edit</button>
+                    <button class="dummy">Delete</button>
+                    <button class="dummy">Collection</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>On</label>
+                    <input type="radio" id="btn_tablet_on" value="tabletON">
+                    <label>Off</label>
+                    <input type="radio" id="btn_tablet_off" value="tabletOFF">
+                </td>
+                <td>
+                    <label>On</label>
+                    <input type="radio" id="btn_tablet_info_on" value="tabletInfoON">
+                    <label>Off</label>
+                    <input type="radio" id="btn_tablet_info_off" value="tabletInfoOFF">
+                </td>
+                <td>
+                    <img id="tablet_img" width="100" height="100" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617126635000" alt="tablet">
+                </td>
+                <td class="tablet_info">iPad Pro</td>
+                <td class="tablet_info">Apple</td>
+                <td class="tablet_info">2021</td>
+                <td class="tablet_info">Tablet</td>
+                <td class="tablet_info">
+                    <button class="dummy">Archive</button>
+                    <button class="dummy">Edit</button>
+                    <button class="dummy">Delete</button>
+                    <button class="dummy">Collection</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>On</label>
+                    <input type="radio" id="btn_phone_on" value="phoneON">
+                    <label>Off</label>
+                    <input type="radio" id="btn_phone_off" value="phoneOFF">
+                </td>
+                <td>
+                    <label>On</label>
+                    <input type="radio" id="btn_phone_info_on" value="phoneInfoON">
+                    <label>Off</label>
+                    <input type="radio" id="btn_phone_info_off" value="phoneInfoOFF">
+                </td>
+                <td>
+                    <img id="phone_img" width="100" height="100" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000" alt="phone">
+                </td>
+                <td class="phone_info">iPhone</td>
+                <td class="phone_info">Apple</td>
+                <td class="phone_info">2021</td>
+                <td class="phone_info">Cellphone</td>
+                <td class="phone_info">
+                    <button class="dummy">Archive</button>
+                    <button class="dummy">Edit</button>
+                    <button class="dummy">Delete</button>
+                    <button class="dummy">Collection</button>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="button" id="bigger_images"value="Make images BIGGER">
+        <input type="button" id="smaller_images"value="Make images SMALLER">
+    </body>
+</html>
